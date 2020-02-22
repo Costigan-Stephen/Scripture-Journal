@@ -25,7 +25,7 @@
                 <a asp-action="Index" asp-route-sortOrder="@ViewData["DateSortParm"]" asp-route-currentFilter="@ViewData["CurrentFilter"]">Date</a>
             </th>
             <th>
-                <a asp-action="Index" asp-route-sortOrder="@ViewData["NameSortParm"]" asp-route-currentFilter="@ViewData["CurrentFilter"]">Book</a>
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["BookSortParm"]" asp-route-currentFilter="@ViewData["CurrentFilter"]">Book</a>
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Entry[0].Chapter)
