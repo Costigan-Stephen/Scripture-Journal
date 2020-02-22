@@ -9,33 +9,35 @@
 
 <h4>Entry</h4>
 <hr />
-<div class="row">
-    <div class="col-md-4">
+<div>
+    <div>
         <form method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="Entry.DateAdded" class="control-label"></label>
-                <input asp-for="Entry.DateAdded" class="form-control" value="@DateTime.Today.ToString("yyyy-MM-dd")"/>
+                <input asp-for="Entry.DateAdded" class="form-control" value="@DateTime.Today.ToString("yyyy-MM-dd")" />
                 <span asp-validation-for="Entry.DateAdded" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Entry.Book" class="control-label"></label>
-                <input asp-for="Entry.Book" class="form-control" />
-                <span asp-validation-for="Entry.Book" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Entry.Chapter" class="control-label"></label>
-                <input asp-for="Entry.Chapter" class="form-control" />
-                <span asp-validation-for="Entry.Chapter" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Entry.VerseRange" class="control-label"></label>
-                <input asp-for="Entry.VerseRange" class="form-control" />
-                <span asp-validation-for="Entry.VerseRange" class="text-danger"></span>
+                <div class="control-label grid">
+                    <label asp-for="Entry.Book"></label>
+                    <label asp-for="Entry.Chapter"></label>
+                    <label asp-for="Entry.VerseRange"></label>
+                </div>
+                <div class="grid">
+                    <input asp-for="Entry.Book" class="form-control" />
+                    <input asp-for="Entry.Chapter" class="form-control" />
+                    <input asp-for="Entry.VerseRange" class="form-control" />
+                </div>
+                <div class="grid">
+                    <span asp-validation-for="Entry.Book" class="text-danger"></span>
+                    <span asp-validation-for="Entry.Chapter" class="text-danger"></span>
+                    <span asp-validation-for="Entry.VerseRange" class="text-danger"></span>
+                </div>
             </div>
             <div class="form-group">
                 <label asp-for="Entry.Notes" class="control-label"></label>
-                <input asp-for="Entry.Notes" class="form-control" />
+                <textarea asp-for="Entry.Notes" class="form-control notes"></textarea>
                 <span asp-validation-for="Entry.Notes" class="text-danger"></span>
             </div>
             <div class="form-group">

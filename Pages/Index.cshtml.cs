@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
+using Scripture_Journal.Models;
 
 namespace Scripture_Journal.Pages
 {
@@ -11,6 +12,7 @@ namespace Scripture_Journal.Pages
         {
             _logger = logger;
         }
+
 
         public void OnGet()
         {

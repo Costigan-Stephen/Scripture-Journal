@@ -1,0 +1,42 @@
+﻿html {
+    background: #f8f8f8;
+}
+
+.center {
+    text-align: center;
+}
+
+nav {
+    background-color: #082c65;
+}
+
+nav a, 
+nav ul,
+footer a{
+    color: white;
+}
+
+nav a:hover, footer a:hover {
+    color: #97ccff;
+}
+
+footer, footer .container {
+    color: gray;
+    background-color: #1b1b1b;
+}
+
+.notes{
+    height: 250px;
+    text-align:start;
+}
+
+.btn{
+    width: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-areas: "area1   area2   area3";
+    grid-row-gap: 15px;
+}
